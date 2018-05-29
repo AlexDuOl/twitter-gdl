@@ -50,6 +50,13 @@ function add(){
     divIcons.appenChild(trash);
     divIcons.appenChild(check);
 
+    var posTime = document.createElement('p');
+    var textTime = document.createTextNode(moment().format('LT'));
+    posTime.id = 'time-size';
+    posTime.appenChild(textTime);
+    divIcons.appenChild(posTime);
+    newComment.appenChild(divIcons);
+
 
 
 
