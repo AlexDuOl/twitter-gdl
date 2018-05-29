@@ -37,7 +37,18 @@ function add(){
     divImg.classList.add('miniPic');
     var divIcons = document.createElement('div');
     divIcons.classList.add('icons');
-    
+
+    var check = document.createElement('input');
+    check.type = 'checkbox';
+
+    var heart = document.createElement('i');
+    heart.classList.add('fa', 'fa-heart', 'heart');
+
+    var trash = document.createElement('i');
+    trash.classList.add('fa', 'fa-trash', 'trash');
+    divIcons.appenChild(heart);
+    divIcons.appenChild(trash);
+    divIcons.appenChild(check);
 
 
 
